@@ -1,0 +1,6 @@
+{
+  "name": "سان · Galaxy S25 Ultra",
+  "description": "سکرین سەیڤەری تایبەت بە سامسۆنگ گالاکسی S25 Ultra بە ناوی سان، لەگەڵ ڕۆژمێری کوردی و گریگۆری و کەشوهەوا.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

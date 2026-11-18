@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-kurdish: 'Vazirmatn', system-ui, -apple-system, sans-serif;
+    --font-display: 'Outfit', 'Vazirmatn', system-ui, sans-serif;
+  }
+
+  html {
+    font-family: var(--font-kurdish);
+    color-scheme: dark;
+  }
+}
+
+.font-clock {
+  font-family: var(--font-display);
+  font-variant-numeric: tabular-nums;
+}
+
+.font-kurdish {
+  font-family: var(--font-kurdish);
+}
+
+/* Samsung One UI signature superellipse squircle mask */
+.oneui-squircle {
+  border-radius: 34%;
+}
+
+/* Subtle OLED pixel-shift animation for Always-On Display authenticity */
+@keyframes aod-breathe {
+  0%, 100% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(0, -3px, 0);
+  }
+}
+
+.animate-aod-shift {
+  animation: aod-breathe 18s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-aod-shift {
+    animation: none;
+  }
+}
+
+/* Custom sleek scrollbar for settings panel */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.22);
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 163, 184, 0.4);
+}
